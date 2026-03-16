@@ -6,5 +6,3 @@ class Producto(Base):
     id_prod = Column(Integer, primary_key = True, index = True )
     nom_prod = Column(String(100))
     proveedor = Column(String(150))
-
-
