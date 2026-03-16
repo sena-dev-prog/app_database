@@ -1,10 +1,10 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import os
 
-load_dotenv(dotenv_path='.env')
+#load_dotenv(dotenv_path='.env')
 
 # Construir la URL de conexión
 #DB_URL = f"mysql+pymysql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@{os.getenv('DB_HOST')}:3306/{os.getenv('DB_NAME')}"
