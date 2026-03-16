@@ -3,7 +3,7 @@ from typing import List
 from sqlalchemy.orm import Session
 from database import get_db
 from modelos import model_producto
-from app_database.esquemas import eschemas
+from esquemas import eschemas
 
 router = APIRouter()
 @router.get("/")
