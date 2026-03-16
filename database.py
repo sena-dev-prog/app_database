@@ -9,7 +9,8 @@ load_dotenv(dotenv_path='.env')
 # Construir la URL de conexión
 #DB_URL = f"mysql+pymysql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@{os.getenv('DB_HOST')}:3306/{os.getenv('DB_NAME')}"
 #DB_URL = f"mysql+pymysql://prueba:{os.getenv('DB_PASSWORD')}@localhost:3306/prueba"
-DB_URL = f"mysql+pymysql://prueba:prueba@localhost:3306/prueba"
+# DB_URL = f"mysql+pymysql://prueba:prueba@localhost:3306/prueba"
+DB_URL = f"mysql+pymysql://root:yUjjseWVPGTBmWVjrKyZeoLDtGaKGGwt@caboose.proxy.rlwy.net:59513/railway"
 
 engine = create_engine(DB_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
