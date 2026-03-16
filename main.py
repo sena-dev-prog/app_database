@@ -3,7 +3,7 @@ from fastapi import FastAPI, Depends
 
 # insertar los archivos de los metodos Get.
 #from app_database.metodos.consultarApi import router
-from app_database.metodos import consultarApi
+from metodos import consultarApi
 
 app = FastAPI()
 app.include_router(consultarApi.router, prefix="/productos")
